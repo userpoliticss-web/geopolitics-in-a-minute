@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geopolitics in a Minute</title>
+  <meta name="description" content="Sharp geopolitical analysis — one story at a time." />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead masthead--home">
+    <div class="masthead-inner">
+      <div class="site-tagline">Sharp analysis · Global affairs</div>
+      <a class="site-title-home" href="index.html">Geopolitics <span>in a Minute</span></a>
+      <div class="masthead-date" id="masthead-date"></div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav-strip">
+    <div class="nav-strip-inner">
+      <a href="index.html" class="active">Latest</a>
+      <a href="#">Central Asia</a>
+      <a href="#">Russia</a>
+      <a href="#">Energy</a>
+      <a href="#">About</a>
+    </div>
+  </nav>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <span class="ticker-label">Latest</span>
+    <span class="ticker-track"></span>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="main-wrap">
+    <div class="section-label">Featured Story</div>
+    <div id="featured-card-slot"></div>
+
+    <div class="section-label">More Stories</div>
+    <div class="articles-grid" id="articles-grid-slot"></div>
+  </main>
+
+  <!-- ABOUT -->
+  <div class="about-strip">
+    <div class="about-strip-inner">
+      <h2>What is<br /><em>Geopolitics<br />in a Minute?</em></h2>
+      <p>
+        A channel dedicated to breaking down the world's most consequential events —
+        clearly, quickly, and without the noise. Every story is chosen because it matters,
+        explained so you understand why it matters, and delivered so you can follow along
+        even with one minute to spare. No spin. No filler. Just the signal.
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 <span>Geopolitics in a Minute</span> · All rights reserved</p>
+  </footer>
+
+  <script src="assets/js/articles.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    setLiveDate('masthead-date');
+    renderTicker();
+    renderIndex();
+  </script>
+
+</body>
+</html>
